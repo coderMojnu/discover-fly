@@ -37,5 +37,9 @@ function bookNowBtn() {
     const subTotal = firstClassTicket * 150 + economyTicket * 100;
     const totalTax = subTotal * 0.1;
     const total = subTotal + totalTax;
-    confirm(document.innerText = 'Press OK to confirm purchase' + '\n' + '_____________________________________________________________________________' + '\n' + 'First Class Ticket - ' + firstClassTicket + '\n' + 'Economy Ticket - ' + economyTicket + '\n' + 'Subtotal - ' + subTotal + '\n' + 'Tax - ' + totalTax + '\n' + 'Total - ' + total);
+    const confirmPurchase = confirm(document.innerText = 'Press OK to confirm purchase' + '\n' + '_____________________________________________________________________________' + '\n' + 'First Class Ticket - ' + firstClassTicket + '\n' + 'Economy Ticket - ' + economyTicket + '\n' + 'Subtotal - ' + subTotal + '\n' + 'Tax - ' + totalTax + '\n' + 'Total - ' + total);
+    if(confirmPurchase == true){
+        var message = 'You are successfully purchased!';
+    }
+    document.getElementById('show-message').innerText = message;
 }

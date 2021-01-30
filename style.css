@@ -89,6 +89,13 @@ nav ul li a:hover, a.active{
     border-radius: 4px;
     margin: 10px 0;
 }
+#show-message {
+    color: white;
+    position: relative;
+    top: 100px;
+    left: 450px;
+    display: inline-block;
+}
 .booking-form .inputs{
     display: grid;
     grid-template-columns: 1fr 1fr;
